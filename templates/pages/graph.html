@@ -183,9 +183,10 @@
     let reg = new RegExp( '&quot;' , "g" );
     graph = graph.replace(reg, '"');
     graph = JSON.parse(graph);
-    console.log(graph);
     let state = graph['state'];
     let edg = graph['edg'];
+    console.log(state);
+    console.log(edg);
 
     let statePoint = 1; // 当前选中的点
     diagGraph.init(statePoint, state, edg); //创建关系图
@@ -200,9 +201,9 @@
 
     //yx @ 2018/8/17
     //test block
-    let testData = '{{ testBlock }}';
-    testData = testData.replace(reg, '"');
-    console.log(JSON.parse(testData));
+    //let testData = '{{ testBlock }}';
+    //testData = testData.replace(reg, '"');
+    //console.log(JSON.parse(testData));
 
     //test block
 
