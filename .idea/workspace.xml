@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c1ee24e-fb99-4682-967a-d291bc74c937" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py" beforeDir="false" afterPath="$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TraceSrc/Algorithm/py2js.py" beforeDir="false" afterPath="$PROJECT_DIR$/TraceSrc/Algorithm/py2js.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TraceSrc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/TraceSrc/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/graph.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,6 +13,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TraceSrc$findPath.coverage" NAME="findPath Coverage Results" MODIFIED="1534496027861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TraceSrc/Algorithm" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -20,13 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="graph.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="graph.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/pages/graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="194" column="38" lean-forward="true" selection-start-line="194" selection-start-column="38" selection-end-line="194" selection-end-column="38" />
+            <state relative-caret-position="187">
+              <caret line="185" column="21" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#!!top" />
+                <element signature="e#1795#5546#0#HTML" />
               </folding>
             </state>
           </provider>
@@ -35,8 +41,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TraceSrc/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="187">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -47,17 +53,20 @@
       <file leaf-file-name="findPath.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="py2js.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="py2js.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/py2js.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="-204">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#28#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,10 +85,15 @@
       <find>var</find>
       <find>static</find>
       <find>&quot;</find>
+      <find>class</find>
+      <find>label</find>
+      <find>vertic</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
       <replace>'</replace>
+      <replace>&quot;class&quot;</replace>
+      <replace>&quot;label&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -92,9 +106,10 @@
         <option value="$PROJECT_DIR$/TraceSrc/urls.py" />
         <option value="$PROJECT_DIR$/TraceSrc/settings.py" />
         <option value="$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py" />
-        <option value="$PROJECT_DIR$/templates/pages/graph.html" />
-        <option value="$PROJECT_DIR$/TraceSrc/views.py" />
+        <option value="$PROJECT_DIR$/TraceSrc/Algorithm/data.py" />
         <option value="$PROJECT_DIR$/TraceSrc/Algorithm/py2js.py" />
+        <option value="$PROJECT_DIR$/TraceSrc/views.py" />
+        <option value="$PROJECT_DIR$/templates/pages/graph.html" />
       </list>
     </option>
   </component>
@@ -196,7 +211,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.TraceSrc">
+    <configuration name="findPath" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TraceSrc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TraceSrc/Algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="TraceSrc" type="Python.DjangoServer" factoryName="Django server">
       <module name="TraceSrc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,6 +254,15 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.TraceSrc" />
+      <item itemvalue="Python.findPath" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.findPath" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -241,17 +284,17 @@
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="4" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Python Console" order="4" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49918166" visible="true" weight="0.17549168" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49918166" visible="true" weight="0.17549168" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3289689" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39934534" />
       <window_info id="Favorites" order="0" sideWeight="0.5008183" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -269,7 +312,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -304,37 +347,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pages/graph.html">
+    <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="194" column="38" lean-forward="true" selection-start-line="194" selection-start-column="38" selection-end-line="194" selection-end-column="38" />
+        <state relative-caret-position="544">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/py2js.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="n#style#0;n#!!top" />
+            <element signature="e#28#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TraceSrc/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="187">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/findPath.py">
+    <entry file="file://$PROJECT_DIR$/templates/pages/graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TraceSrc/Algorithm/py2js.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="185" column="21" selection-start-line="185" selection-start-column="21" selection-end-line="185" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+            <element signature="e#1795#5546#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>

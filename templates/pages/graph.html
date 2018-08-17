@@ -95,7 +95,8 @@
 </ul>
 
 <script id="js">
-    let state = [
+    /**
+     * let state = [
         {id: 1, label: 'V1\n供货商A', class: 'type-suss'},
         {id: 2, label: 'V2\n供货商B', class: 'type-suss'},
         {id: 3, label: 'V3\n供货商C', class: 'type-init'},
@@ -176,6 +177,16 @@
         {start: 25, end: 33, option: {label: "1 0 2"}},
         {start: 25, end: 34, option: {label: "0 1 3"}}
     ];
+     * */
+
+    let graph = '{{ graph }}';
+    let reg = new RegExp( '&quot;' , "g" );
+    graph = graph.replace(reg, '"');
+    graph = JSON.parse(graph);
+    console.log(graph);
+    let state = graph['state'];
+    let edg = graph['edg'];
+
     let statePoint = 1; // 当前选中的点
     diagGraph.init(statePoint, state, edg); //创建关系图
 
@@ -190,9 +201,9 @@
     //yx @ 2018/8/17
     //test block
     let testData = '{{ testBlock }}';
-    let reg = new RegExp( '&quot;' , "g" );
     testData = testData.replace(reg, '"');
     console.log(JSON.parse(testData));
+
     //test block
 
     let myMenu = document.getElementById("myMenu"); //鼠标右键
