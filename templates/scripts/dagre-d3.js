@@ -27572,7 +27572,7 @@ function isSlowBuffer (obj) {
   /**
    * Create a new pristine `lodash` function using the `context` object.
    *
-   * @static
+   * @scripts
    * @memberOf _
    * @since 1.1.0
    * @category Util
@@ -27905,7 +27905,7 @@ function isSlowBuffer (obj) {
      * embedded Ruby (ERB) as well as ES2015 template strings. Change the
      * following template settings to use alternative delimiters.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @type {Object}
      */
@@ -33011,7 +33011,7 @@ function isSlowBuffer (obj) {
      * If `array` can't be split evenly, the final chunk will be the remaining
      * elements.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -33051,7 +33051,7 @@ function isSlowBuffer (obj) {
      * Creates an array with all falsey values removed. The values `false`, `null`,
      * `0`, `""`, `undefined`, and `NaN` are falsey.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33081,7 +33081,7 @@ function isSlowBuffer (obj) {
      * Creates a new array concatenating `array` with any additional arrays
      * and/or values.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33122,7 +33122,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.pullAll`, this method returns a new array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33150,7 +33150,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.pullAllBy`, this method returns a new array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33185,7 +33185,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.pullAllWith`, this method returns a new array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33213,7 +33213,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a slice of `array` with `n` elements dropped from the beginning.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.5.0
      * @category Array
@@ -33247,7 +33247,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a slice of `array` with `n` elements dropped from the end.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -33284,7 +33284,7 @@ function isSlowBuffer (obj) {
      * Elements are dropped until `predicate` returns falsey. The predicate is
      * invoked with three arguments: (value, index, array).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -33325,7 +33325,7 @@ function isSlowBuffer (obj) {
      * Elements are dropped until `predicate` returns falsey. The predicate is
      * invoked with three arguments: (value, index, array).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -33367,7 +33367,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.2.0
      * @category Array
@@ -33406,7 +33406,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.find` except that it returns the index of the first
      * element `predicate` returns truthy for instead of the element itself.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.1.0
      * @category Array
@@ -33453,7 +33453,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.findIndex` except that it iterates over elements
      * of `collection` from right to left.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Array
@@ -33502,7 +33502,7 @@ function isSlowBuffer (obj) {
     /**
      * Flattens `array` a single level deep.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33521,7 +33521,7 @@ function isSlowBuffer (obj) {
     /**
      * Recursively flattens `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -33540,7 +33540,7 @@ function isSlowBuffer (obj) {
     /**
      * Recursively flatten `array` up to `depth` times.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.4.0
      * @category Array
@@ -33570,7 +33570,7 @@ function isSlowBuffer (obj) {
      * The inverse of `_.toPairs`; this method returns an object composed
      * from key-value `pairs`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33596,7 +33596,7 @@ function isSlowBuffer (obj) {
     /**
      * Gets the first element of `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @alias first
@@ -33621,7 +33621,7 @@ function isSlowBuffer (obj) {
      * for equality comparisons. If `fromIndex` is negative, it's used as the
      * offset from the end of `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33653,7 +33653,7 @@ function isSlowBuffer (obj) {
     /**
      * Gets all but the last element of `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33675,7 +33675,7 @@ function isSlowBuffer (obj) {
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33700,7 +33700,7 @@ function isSlowBuffer (obj) {
      * determined by the first array. The iteratee is invoked with one argument:
      * (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33736,7 +33736,7 @@ function isSlowBuffer (obj) {
      * of result values are determined by the first array. The comparator is
      * invoked with two arguments: (arrVal, othVal).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33767,7 +33767,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts all elements in `array` into a string separated by `separator`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33786,7 +33786,7 @@ function isSlowBuffer (obj) {
     /**
      * Gets the last element of `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33806,7 +33806,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.indexOf` except that it iterates over elements of
      * `array` from right to left.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -33842,7 +33842,7 @@ function isSlowBuffer (obj) {
      * Gets the element at index `n` of `array`. If `n` is negative, the nth
      * element from the end is returned.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.11.0
      * @category Array
@@ -33871,7 +33871,7 @@ function isSlowBuffer (obj) {
      * **Note:** Unlike `_.without`, this method mutates `array`. Use `_.remove`
      * to remove elements from an array by predicate.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Array
@@ -33893,7 +33893,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.difference`, this method mutates `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33921,7 +33921,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.differenceBy`, this method mutates `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -33950,7 +33950,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.differenceWith`, this method mutates `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.6.0
      * @category Array
@@ -33978,7 +33978,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.at`, this method mutates `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -34015,7 +34015,7 @@ function isSlowBuffer (obj) {
      * **Note:** Unlike `_.filter`, this method mutates `array`. Use `_.pull`
      * to pull elements from an array by value.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Array
@@ -34063,7 +34063,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method mutates `array` and is based on
      * [`Array#reverse`](https://mdn.io/Array/reverse).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34090,7 +34090,7 @@ function isSlowBuffer (obj) {
      * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
      * returned.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -34119,7 +34119,7 @@ function isSlowBuffer (obj) {
      * Uses a binary search to determine the lowest index at which `value`
      * should be inserted into `array` in order to maintain its sort order.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -34141,7 +34141,7 @@ function isSlowBuffer (obj) {
      * which is invoked for `value` and each element of `array` to compute their
      * sort ranking. The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34169,7 +34169,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.indexOf` except that it performs a binary
      * search on a sorted `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34197,7 +34197,7 @@ function isSlowBuffer (obj) {
      * index at which `value` should be inserted into `array` in order to
      * maintain its sort order.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -34219,7 +34219,7 @@ function isSlowBuffer (obj) {
      * which is invoked for `value` and each element of `array` to compute their
      * sort ranking. The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34247,7 +34247,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.lastIndexOf` except that it performs a binary
      * search on a sorted `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34274,7 +34274,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.uniq` except that it's designed and optimized
      * for sorted arrays.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34295,7 +34295,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.uniqBy` except that it's designed and optimized
      * for sorted arrays.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34316,7 +34316,7 @@ function isSlowBuffer (obj) {
     /**
      * Gets all but the first element of `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34335,7 +34335,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a slice of `array` with `n` elements taken from the beginning.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -34368,7 +34368,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a slice of `array` with `n` elements taken from the end.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -34405,7 +34405,7 @@ function isSlowBuffer (obj) {
      * taken until `predicate` returns falsey. The predicate is invoked with
      * three arguments: (value, index, array).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -34446,7 +34446,7 @@ function isSlowBuffer (obj) {
      * are taken until `predicate` returns falsey. The predicate is invoked with
      * three arguments: (value, index, array).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Array
@@ -34487,7 +34487,7 @@ function isSlowBuffer (obj) {
      * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -34509,7 +34509,7 @@ function isSlowBuffer (obj) {
      * array in which the value occurs. The iteratee is invoked with one argument:
      * (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34539,7 +34539,7 @@ function isSlowBuffer (obj) {
      * the first array in which the value occurs. The comparator is invoked
      * with two arguments: (arrVal, othVal).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34567,7 +34567,7 @@ function isSlowBuffer (obj) {
      * is kept. The order of result values is determined by the order they occur
      * in the array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -34589,7 +34589,7 @@ function isSlowBuffer (obj) {
      * order they occur in the array. The iteratee is invoked with one argument:
      * (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34615,7 +34615,7 @@ function isSlowBuffer (obj) {
      * determined by the order they occur in the array.The comparator is invoked
      * with two arguments: (arrVal, othVal).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34639,7 +34639,7 @@ function isSlowBuffer (obj) {
      * elements and creates an array regrouping the elements to their pre-zip
      * configuration.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.2.0
      * @category Array
@@ -34674,7 +34674,7 @@ function isSlowBuffer (obj) {
      * how regrouped values should be combined. The iteratee is invoked with the
      * elements of each group: (...group).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.8.0
      * @category Array
@@ -34710,7 +34710,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.pull`, this method returns a new array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -34735,7 +34735,7 @@ function isSlowBuffer (obj) {
      * of the given arrays. The order of result values is determined by the order
      * they occur in the arrays.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.4.0
      * @category Array
@@ -34758,7 +34758,7 @@ function isSlowBuffer (obj) {
      * by the order they occur in the arrays. The iteratee is invoked with one
      * argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34788,7 +34788,7 @@ function isSlowBuffer (obj) {
      * determined by the order they occur in the arrays. The comparator is invoked
      * with two arguments: (arrVal, othVal).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Array
@@ -34814,7 +34814,7 @@ function isSlowBuffer (obj) {
      * first elements of the given arrays, the second of which contains the
      * second elements of the given arrays, and so on.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Array
@@ -34831,7 +34831,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.fromPairs` except that it accepts two arrays,
      * one of property identifiers and one of corresponding values.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.4.0
      * @category Array
@@ -34850,7 +34850,7 @@ function isSlowBuffer (obj) {
     /**
      * This method is like `_.zipObject` except that it supports property paths.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.1.0
      * @category Array
@@ -34871,7 +34871,7 @@ function isSlowBuffer (obj) {
      * how grouped values should be combined. The iteratee is invoked with the
      * elements of each group: (...group).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.8.0
      * @category Array
@@ -34901,7 +34901,7 @@ function isSlowBuffer (obj) {
      * chain sequences enabled. The result of such sequences must be unwrapped
      * with `_#value`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.3.0
      * @category Seq
@@ -34936,7 +34936,7 @@ function isSlowBuffer (obj) {
      * is invoked with one argument; (value). The purpose of this method is to
      * "tap into" a method chain sequence in order to modify intermediate results.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Seq
@@ -34964,7 +34964,7 @@ function isSlowBuffer (obj) {
      * The purpose of this method is to "pass thru" values replacing intermediate
      * results in a method chain sequence.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Seq
@@ -35249,7 +35249,7 @@ function isSlowBuffer (obj) {
      * each key is the number of times the key was returned by `iteratee`. The
      * iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.5.0
      * @category Collection
@@ -35283,7 +35283,7 @@ function isSlowBuffer (obj) {
      * [everything is true](https://en.wikipedia.org/wiki/Vacuous_truth) of
      * elements of empty collections.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35329,7 +35329,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Unlike `_.remove`, this method returns a new array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35369,7 +35369,7 @@ function isSlowBuffer (obj) {
      * `predicate` returns truthy for. The predicate is invoked with three
      * arguments: (value, index|key, collection).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35406,7 +35406,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.find` except that it iterates over elements of
      * `collection` from right to left.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Collection
@@ -35428,7 +35428,7 @@ function isSlowBuffer (obj) {
      * thru `iteratee` and flattening the mapped results. The iteratee is invoked
      * with three arguments: (value, index|key, collection).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Collection
@@ -35452,7 +35452,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.flatMap` except that it recursively flattens the
      * mapped results.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.7.0
      * @category Collection
@@ -35476,7 +35476,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.flatMap` except that it recursively flattens the
      * mapped results up to `depth` times.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.7.0
      * @category Collection
@@ -35507,7 +35507,7 @@ function isSlowBuffer (obj) {
      * property are iterated like arrays. To avoid this behavior use `_.forIn`
      * or `_.forOwn` for object iteration.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @alias each
@@ -35537,7 +35537,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.forEach` except that it iterates over elements of
      * `collection` from right to left.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @alias eachRight
@@ -35565,7 +35565,7 @@ function isSlowBuffer (obj) {
      * value of each key is an array of elements responsible for generating the
      * key. The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35596,7 +35596,7 @@ function isSlowBuffer (obj) {
      * is used for equality comparisons. If `fromIndex` is negative, it's used as
      * the offset from the end of `collection`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35638,7 +35638,7 @@ function isSlowBuffer (obj) {
      * are provided to each invoked method. If `path` is a function, it's invoked
      * for, and `this` bound to, each element in `collection`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Collection
@@ -35672,7 +35672,7 @@ function isSlowBuffer (obj) {
      * each key is the last element responsible for generating the key. The
      * iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Collection
@@ -35712,7 +35712,7 @@ function isSlowBuffer (obj) {
      * `sampleSize`, `slice`, `some`, `sortBy`, `split`, `take`, `takeRight`,
      * `template`, `trim`, `trimEnd`, `trimStart`, and `words`
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35751,7 +35751,7 @@ function isSlowBuffer (obj) {
      * are sorted in ascending order. Otherwise, specify an order of "desc" for
      * descending or "asc" for ascending sort order of corresponding values.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Collection
@@ -35794,7 +35794,7 @@ function isSlowBuffer (obj) {
      * contains elements `predicate` returns falsey for. The predicate is
      * invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Collection
@@ -35843,7 +35843,7 @@ function isSlowBuffer (obj) {
      * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
      * and `sortBy`
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35876,7 +35876,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.reduce` except that it iterates over elements of
      * `collection` from right to left.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35905,7 +35905,7 @@ function isSlowBuffer (obj) {
      * The opposite of `_.filter`; this method returns the elements of `collection`
      * that `predicate` does **not** return truthy for.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -35943,7 +35943,7 @@ function isSlowBuffer (obj) {
     /**
      * Gets a random element from `collection`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Collection
@@ -35963,7 +35963,7 @@ function isSlowBuffer (obj) {
      * Gets `n` random elements at unique keys from `collection` up to the
      * size of `collection`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Collection
@@ -35993,7 +35993,7 @@ function isSlowBuffer (obj) {
      * Creates an array of shuffled values, using a version of the
      * [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher-Yates_shuffle).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -36013,7 +36013,7 @@ function isSlowBuffer (obj) {
      * Gets the size of `collection` by returning its length for array-like
      * values or the number of own enumerable string keyed properties for objects.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -36049,7 +36049,7 @@ function isSlowBuffer (obj) {
      * Iteration is stopped once `predicate` returns truthy. The predicate is
      * invoked with three arguments: (value, index|key, collection).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -36094,7 +36094,7 @@ function isSlowBuffer (obj) {
      * performs a stable sort, that is, it preserves the original sort order of
      * equal elements. The iteratees are invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Collection
@@ -36136,7 +36136,7 @@ function isSlowBuffer (obj) {
      * Gets the timestamp of the number of milliseconds that have elapsed since
      * the Unix epoch (1 January 1970 00:00:00 UTC).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.4.0
      * @category Date
@@ -36158,7 +36158,7 @@ function isSlowBuffer (obj) {
      * The opposite of `_.before`; this method creates a function that invokes
      * `func` once it's called `n` or more times.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36194,7 +36194,7 @@ function isSlowBuffer (obj) {
      * Creates a function that invokes `func`, with up to `n` arguments,
      * ignoring any additional arguments.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Function
@@ -36218,7 +36218,7 @@ function isSlowBuffer (obj) {
      * of the created function, while it's called less than `n` times. Subsequent
      * calls to the created function return the result of the last `func` invocation.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Function
@@ -36257,7 +36257,7 @@ function isSlowBuffer (obj) {
      * **Note:** Unlike native `Function#bind`, this method doesn't set the "length"
      * property of bound functions.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36303,7 +36303,7 @@ function isSlowBuffer (obj) {
      * The `_.bindKey.placeholder` value, which defaults to `_` in monolithic
      * builds, may be used as a placeholder for partially applied arguments.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.10.0
      * @category Function
@@ -36357,7 +36357,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method doesn't set the "length" property of curried functions.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Function
@@ -36402,7 +36402,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method doesn't set the "length" property of curried functions.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Function
@@ -36459,7 +36459,7 @@ function isSlowBuffer (obj) {
      * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
      * for details over the differences between `_.debounce` and `_.throttle`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36618,7 +36618,7 @@ function isSlowBuffer (obj) {
      * Defers invoking the `func` until the current call stack has cleared. Any
      * additional arguments are provided to `func` when it's invoked.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36640,7 +36640,7 @@ function isSlowBuffer (obj) {
      * Invokes `func` after `wait` milliseconds. Any additional arguments are
      * provided to `func` when it's invoked.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36662,7 +36662,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a function that invokes `func` with arguments reversed.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Function
@@ -36694,7 +36694,7 @@ function isSlowBuffer (obj) {
      * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
      * method interface of `clear`, `delete`, `get`, `has`, and `set`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36753,7 +36753,7 @@ function isSlowBuffer (obj) {
      * `func` predicate is invoked with the `this` binding and arguments of the
      * created function.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Function
@@ -36789,7 +36789,7 @@ function isSlowBuffer (obj) {
      * to the function return the value of the first invocation. The `func` is
      * invoked with the `this` binding and arguments of the created function.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -36809,7 +36809,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a function that invokes `func` with its arguments transformed.
      *
-     * @static
+     * @scripts
      * @since 4.0.0
      * @memberOf _
      * @category Function
@@ -36865,7 +36865,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method doesn't set the "length" property of partially
      * applied functions.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.2.0
      * @category Function
@@ -36902,7 +36902,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method doesn't set the "length" property of partially
      * applied functions.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.0.0
      * @category Function
@@ -36935,7 +36935,7 @@ function isSlowBuffer (obj) {
      * provided as the first argument, the argument value at the second index is
      * provided as the second argument, and so on.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Function
@@ -36963,7 +36963,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on the
      * [rest parameter](https://mdn.io/rest_parameters).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Function
@@ -36996,7 +36996,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on the
      * [spread operator](https://mdn.io/spread_operator).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.2.0
      * @category Function
@@ -37058,7 +37058,7 @@ function isSlowBuffer (obj) {
      * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
      * for details over the differences between `_.throttle` and `_.debounce`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -37104,7 +37104,7 @@ function isSlowBuffer (obj) {
      * Creates a function that accepts up to one argument, ignoring any
      * additional arguments.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Function
@@ -37125,7 +37125,7 @@ function isSlowBuffer (obj) {
      * to those provided to the `wrapper`. The wrapper is invoked with the `this`
      * binding of the created function.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Function
@@ -37150,7 +37150,7 @@ function isSlowBuffer (obj) {
     /**
      * Casts `value` as an array if it's not one.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.4.0
      * @category Lang
@@ -37199,7 +37199,7 @@ function isSlowBuffer (obj) {
      * as plain objects. An empty object is returned for uncloneable values such
      * as error objects, functions, DOM nodes, and WeakMaps.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37224,7 +37224,7 @@ function isSlowBuffer (obj) {
      * cloning is handled by the method instead. The `customizer` is invoked with
      * up to four arguments; (value [, index|key, object, stack]).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37257,7 +37257,7 @@ function isSlowBuffer (obj) {
     /**
      * This method is like `_.clone` except that it recursively clones `value`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.0.0
      * @category Lang
@@ -37279,7 +37279,7 @@ function isSlowBuffer (obj) {
     /**
      * This method is like `_.cloneWith` except that it recursively clones `value`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37316,7 +37316,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is equivalent to `_.conforms` when `source` is
      * partially applied.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.14.0
      * @category Lang
@@ -37342,7 +37342,7 @@ function isSlowBuffer (obj) {
      * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * comparison between two values to determine if they are equivalent.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37376,7 +37376,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is greater than `other`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.9.0
      * @category Lang
@@ -37401,7 +37401,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is greater than or equal to `other`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.9.0
      * @category Lang
@@ -37428,7 +37428,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is likely an `arguments` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37451,7 +37451,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as an `Array` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37476,7 +37476,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as an `ArrayBuffer` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.3.0
      * @category Lang
@@ -37497,7 +37497,7 @@ function isSlowBuffer (obj) {
      * not a function and has a `value.length` that's an integer greater than or
      * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37525,7 +37525,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.isArrayLike` except that it also checks if `value`
      * is an object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37553,7 +37553,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a boolean primitive or object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37575,7 +37575,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is a buffer.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.3.0
      * @category Lang
@@ -37594,7 +37594,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `Date` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37613,7 +37613,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is likely a DOM element.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37641,7 +37641,7 @@ function isSlowBuffer (obj) {
      * jQuery-like collections are considered empty if they have a `length` of `0`.
      * Similarly, maps and sets are considered empty if they have a `size` of `0`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37698,7 +37698,7 @@ function isSlowBuffer (obj) {
      * by their own, not inherited, enumerable properties. Functions and DOM
      * nodes are compared by strict equality, i.e. `===`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37726,7 +37726,7 @@ function isSlowBuffer (obj) {
      * are handled by the method instead. The `customizer` is invoked with up to
      * six arguments: (objValue, othValue [, index|key, object, other, stack]).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37762,7 +37762,7 @@ function isSlowBuffer (obj) {
      * Checks if `value` is an `Error`, `EvalError`, `RangeError`, `ReferenceError`,
      * `SyntaxError`, `TypeError`, or `URIError` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Lang
@@ -37791,7 +37791,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on
      * [`Number.isFinite`](https://mdn.io/Number/isFinite).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37818,7 +37818,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `Function` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37848,7 +37848,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on
      * [`Number.isInteger`](https://mdn.io/Number/isInteger).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37878,7 +37878,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is loosely based on
      * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37908,7 +37908,7 @@ function isSlowBuffer (obj) {
      * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
      * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -37937,7 +37937,7 @@ function isSlowBuffer (obj) {
      * Checks if `value` is object-like. A value is object-like if it's not `null`
      * and has a `typeof` result of "object".
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -37964,7 +37964,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `Map` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.3.0
      * @category Lang
@@ -37991,7 +37991,7 @@ function isSlowBuffer (obj) {
      * values against any array or object value, respectively. See `_.isEqual`
      * for a list of supported value comparisons.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Lang
@@ -38018,7 +38018,7 @@ function isSlowBuffer (obj) {
      * are handled by the method instead. The `customizer` is invoked with five
      * arguments: (objValue, srcValue, index|key, object, source).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38057,7 +38057,7 @@ function isSlowBuffer (obj) {
      * global [`isNaN`](https://mdn.io/isNaN) which returns `true` for
      * `undefined` and other non-number values.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -38095,7 +38095,7 @@ function isSlowBuffer (obj) {
      * packages, like [babel-polyfill](https://www.npmjs.com/package/babel-polyfill),
      * which rely on core-js.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Lang
@@ -38120,7 +38120,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is `null`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -38141,7 +38141,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is `null` or `undefined`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38168,7 +38168,7 @@ function isSlowBuffer (obj) {
      * **Note:** To exclude `Infinity`, `-Infinity`, and `NaN`, which are
      * classified as numbers, use the `_.isFinite` method.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -38197,7 +38197,7 @@ function isSlowBuffer (obj) {
      * Checks if `value` is a plain object, that is, an object created by the
      * `Object` constructor or one with a `[[Prototype]]` of `null`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.8.0
      * @category Lang
@@ -38237,7 +38237,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `RegExp` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.1.0
      * @category Lang
@@ -38260,7 +38260,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on
      * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38287,7 +38287,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `Set` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.3.0
      * @category Lang
@@ -38306,7 +38306,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `String` primitive or object.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Lang
@@ -38328,7 +38328,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `Symbol` primitive or object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38350,7 +38350,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a typed array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Lang
@@ -38369,7 +38369,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is `undefined`.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Lang
@@ -38390,7 +38390,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `WeakMap` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.3.0
      * @category Lang
@@ -38411,7 +38411,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is classified as a `WeakSet` object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.3.0
      * @category Lang
@@ -38432,7 +38432,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is less than `other`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.9.0
      * @category Lang
@@ -38457,7 +38457,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `value` is less than or equal to `other`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.9.0
      * @category Lang
@@ -38484,7 +38484,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `value` to an array.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Lang
@@ -38523,7 +38523,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `value` to a finite number.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.12.0
      * @category Lang
@@ -38561,7 +38561,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is loosely based on
      * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38595,7 +38595,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on
      * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38622,7 +38622,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `value` to a number.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38667,7 +38667,7 @@ function isSlowBuffer (obj) {
      * Converts `value` to a plain object flattening inherited enumerable string
      * keyed properties of `value` to own properties of the plain object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Lang
@@ -38695,7 +38695,7 @@ function isSlowBuffer (obj) {
      * Converts `value` to a safe integer. A safe integer can be compared and
      * represented correctly.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38725,7 +38725,7 @@ function isSlowBuffer (obj) {
      * Converts `value` to a string. An empty string is returned for `null`
      * and `undefined` values. The sign of `-0` is preserved.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Lang
@@ -38756,7 +38756,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method mutates `object` and is loosely based on
      * [`Object.assign`](https://mdn.io/Object/assign).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.10.0
      * @category Object
@@ -38798,7 +38798,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @alias extend
@@ -38835,7 +38835,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @alias extendWith
@@ -38868,7 +38868,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -38895,7 +38895,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates an array of values corresponding to `paths` of `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.0.0
      * @category Object
@@ -38916,7 +38916,7 @@ function isSlowBuffer (obj) {
      * `properties` object is given, its own enumerable string keyed properties
      * are assigned to the created object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.3.0
      * @category Object
@@ -38958,7 +38958,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -38982,7 +38982,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.10.0
      * @category Object
@@ -39004,7 +39004,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.find` except that it returns the key of the first
      * element `predicate` returns truthy for instead of the element itself.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.1.0
      * @category Object
@@ -39043,7 +39043,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.findKey` except that it iterates over elements of
      * a collection in the opposite order.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Object
@@ -39084,7 +39084,7 @@ function isSlowBuffer (obj) {
      * with three arguments: (value, key, object). Iteratee functions may exit
      * iteration early by explicitly returning `false`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.3.0
      * @category Object
@@ -39116,7 +39116,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.forIn` except that it iterates over properties of
      * `object` in the opposite order.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Object
@@ -39150,7 +39150,7 @@ function isSlowBuffer (obj) {
      * arguments: (value, key, object). Iteratee functions may exit iteration
      * early by explicitly returning `false`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.3.0
      * @category Object
@@ -39180,7 +39180,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.forOwn` except that it iterates over properties of
      * `object` in the opposite order.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.0.0
      * @category Object
@@ -39210,7 +39210,7 @@ function isSlowBuffer (obj) {
      * Creates an array of function property names from own enumerable properties
      * of `object`.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -39237,7 +39237,7 @@ function isSlowBuffer (obj) {
      * Creates an array of function property names from own and inherited
      * enumerable properties of `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39264,7 +39264,7 @@ function isSlowBuffer (obj) {
      * Gets the value at `path` of `object`. If the resolved value is
      * `undefined`, the `defaultValue` is returned in its place.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.7.0
      * @category Object
@@ -39293,7 +39293,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `path` is a direct property of `object`.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -39324,7 +39324,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `path` is a direct or inherited property of `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39356,7 +39356,7 @@ function isSlowBuffer (obj) {
      * If `object` contains duplicate values, subsequent values overwrite
      * property assignments of previous values.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.7.0
      * @category Object
@@ -39380,7 +39380,7 @@ function isSlowBuffer (obj) {
      * responsible for generating the inverted value. The iteratee is invoked
      * with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.1.0
      * @category Object
@@ -39410,7 +39410,7 @@ function isSlowBuffer (obj) {
     /**
      * Invokes the method at `path` of `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39434,7 +39434,7 @@ function isSlowBuffer (obj) {
      * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
      * for more details.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -39464,7 +39464,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Non-object values are coerced to objects.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Object
@@ -39492,7 +39492,7 @@ function isSlowBuffer (obj) {
      * string keyed property of `object` thru `iteratee`. The iteratee is invoked
      * with three arguments: (value, key, object).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.8.0
      * @category Object
@@ -39523,7 +39523,7 @@ function isSlowBuffer (obj) {
      * `iteratee`. The iteratee is invoked with three arguments:
      * (value, key, object).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.4.0
      * @category Object
@@ -39566,7 +39566,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.5.0
      * @category Object
@@ -39599,7 +39599,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39631,7 +39631,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method is considerably slower than `_.pick`.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -39673,7 +39673,7 @@ function isSlowBuffer (obj) {
      * `predicate` doesn't return truthy for. The predicate is invoked with two
      * arguments: (value, key).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39694,7 +39694,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates an object composed of the picked `object` properties.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -39716,7 +39716,7 @@ function isSlowBuffer (obj) {
      * Creates an object composed of the `object` properties `predicate` returns
      * truthy for. The predicate is invoked with two arguments: (value, key).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39748,7 +39748,7 @@ function isSlowBuffer (obj) {
      * function it's invoked with the `this` binding of its parent object and
      * its result is returned.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -39802,7 +39802,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.7.0
      * @category Object
@@ -39834,7 +39834,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39860,7 +39860,7 @@ function isSlowBuffer (obj) {
      * which can be consumed by `_.fromPairs`. If `object` is a map or set, its
      * entries are returned.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @alias entries
@@ -39886,7 +39886,7 @@ function isSlowBuffer (obj) {
      * for `object` which can be consumed by `_.fromPairs`. If `object` is a map
      * or set, its entries are returned.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @alias entriesIn
@@ -39916,7 +39916,7 @@ function isSlowBuffer (obj) {
      * iteratee is invoked with four arguments: (accumulator, value, key, object).
      * Iteratee functions may exit iteration early by explicitly returning `false`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.3.0
      * @category Object
@@ -39965,7 +39965,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Object
@@ -39998,7 +39998,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.6.0
      * @category Object
@@ -40030,7 +40030,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method mutates `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.6.0
      * @category Object
@@ -40056,7 +40056,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Non-object values are coerced to objects.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Object
@@ -40087,7 +40087,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** Non-object values are coerced to objects.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Object
@@ -40114,7 +40114,7 @@ function isSlowBuffer (obj) {
     /**
      * Clamps `number` within the inclusive `lower` and `upper` bounds.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Number
@@ -40152,7 +40152,7 @@ function isSlowBuffer (obj) {
      * If `start` is greater than `end` the params are swapped to support
      * negative ranges.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.3.0
      * @category Number
@@ -40205,7 +40205,7 @@ function isSlowBuffer (obj) {
      * **Note:** JavaScript follows the IEEE-754 standard for resolving
      * floating-point values which can produce unexpected results.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.7.0
      * @category Number
@@ -40271,7 +40271,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40297,7 +40297,7 @@ function isSlowBuffer (obj) {
      * Converts the first character of `string` to upper case and the remaining
      * to lower case.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40319,7 +40319,7 @@ function isSlowBuffer (obj) {
      * letters to basic Latin letters and removing
      * [combining diacritical marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40338,7 +40338,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `string` ends with the given target string.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40389,7 +40389,7 @@ function isSlowBuffer (obj) {
      * [quote attribute values](http://wonko.com/post/html-escaping) to reduce
      * XSS vectors.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category String
@@ -40411,7 +40411,7 @@ function isSlowBuffer (obj) {
      * Escapes the `RegExp` special characters "^", "$", "\", ".", "*", "+",
      * "?", "(", ")", "[", "]", "{", "}", and "|" in `string`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40433,7 +40433,7 @@ function isSlowBuffer (obj) {
      * Converts `string` to
      * [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40457,7 +40457,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `string`, as space separated words, to lower case.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -40481,7 +40481,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts the first character of `string` to lower case.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -40501,7 +40501,7 @@ function isSlowBuffer (obj) {
      * Pads `string` on the left and right sides if it's shorter than `length`.
      * Padding characters are truncated if they can't be evenly divided by `length`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40540,7 +40540,7 @@ function isSlowBuffer (obj) {
      * Pads `string` on the right side if it's shorter than `length`. Padding
      * characters are truncated if they exceed `length`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -40573,7 +40573,7 @@ function isSlowBuffer (obj) {
      * Pads `string` on the left side if it's shorter than `length`. Padding
      * characters are truncated if they exceed `length`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -40610,7 +40610,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method aligns with the
      * [ES5 implementation](https://es5.github.io/#x15.1.2.2) of `parseInt`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 1.1.0
      * @category String
@@ -40638,7 +40638,7 @@ function isSlowBuffer (obj) {
     /**
      * Repeats the given string `n` times.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40672,7 +40672,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on
      * [`String#replace`](https://mdn.io/String/replace).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -40696,7 +40696,7 @@ function isSlowBuffer (obj) {
      * Converts `string` to
      * [snake case](https://en.wikipedia.org/wiki/Snake_case).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40723,7 +40723,7 @@ function isSlowBuffer (obj) {
      * **Note:** This method is based on
      * [`String#split`](https://mdn.io/String/split).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -40761,7 +40761,7 @@ function isSlowBuffer (obj) {
      * Converts `string` to
      * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.1.0
      * @category String
@@ -40785,7 +40785,7 @@ function isSlowBuffer (obj) {
     /**
      * Checks if `string` starts with the given target string.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -40832,7 +40832,7 @@ function isSlowBuffer (obj) {
      * For more information on Chrome extension sandboxes see
      * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category String
@@ -41031,7 +41031,7 @@ function isSlowBuffer (obj) {
      * Converts `string`, as a whole, to lower case just like
      * [String#toLowerCase](https://mdn.io/toLowerCase).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41056,7 +41056,7 @@ function isSlowBuffer (obj) {
      * Converts `string`, as a whole, to upper case just like
      * [String#toUpperCase](https://mdn.io/toUpperCase).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41080,7 +41080,7 @@ function isSlowBuffer (obj) {
     /**
      * Removes leading and trailing whitespace or specified characters from `string`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -41118,7 +41118,7 @@ function isSlowBuffer (obj) {
     /**
      * Removes trailing whitespace or specified characters from `string`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41151,7 +41151,7 @@ function isSlowBuffer (obj) {
     /**
      * Removes leading whitespace or specified characters from `string`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41186,7 +41186,7 @@ function isSlowBuffer (obj) {
      * The last characters of the truncated string are replaced with the omission
      * string which defaults to "...".
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41282,7 +41282,7 @@ function isSlowBuffer (obj) {
      * **Note:** No other HTML entities are unescaped. To unescape additional
      * HTML entities use a third-party library like [_he_](https://mths.be/he).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 0.6.0
      * @category String
@@ -41303,7 +41303,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `string`, as space separated words, to upper case.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41327,7 +41327,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts the first character of `string` to upper case.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category String
@@ -41346,7 +41346,7 @@ function isSlowBuffer (obj) {
     /**
      * Splits `string` into an array of its words.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category String
@@ -41378,7 +41378,7 @@ function isSlowBuffer (obj) {
      * Attempts to invoke `func`, returning either the result or the caught error
      * object. Any additional arguments are provided to `func` when it's invoked.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Util
@@ -41410,7 +41410,7 @@ function isSlowBuffer (obj) {
      *
      * **Note:** This method doesn't set the "length" property of bound functions.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -41444,7 +41444,7 @@ function isSlowBuffer (obj) {
      * pairs are invoked with the `this` binding and arguments of the created
      * function.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -41497,7 +41497,7 @@ function isSlowBuffer (obj) {
      * **Note:** The created function is equivalent to `_.conformsTo` with
      * `source` partially applied.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -41520,7 +41520,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a function that returns `value`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.4.0
      * @category Util
@@ -41547,7 +41547,7 @@ function isSlowBuffer (obj) {
      * its place. The `defaultValue` is returned if `value` is `NaN`, `null`,
      * or `undefined`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.14.0
      * @category Util
@@ -41571,7 +41571,7 @@ function isSlowBuffer (obj) {
      * with the `this` binding of the created function, where each successive
      * invocation is supplied the return value of the previous.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Util
@@ -41594,7 +41594,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.flow` except that it creates a function that
      * invokes the given functions from right to left.
      *
-     * @static
+     * @scripts
      * @since 3.0.0
      * @memberOf _
      * @category Util
@@ -41616,7 +41616,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns the first argument it receives.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -41640,7 +41640,7 @@ function isSlowBuffer (obj) {
      * created function returns `true` for elements that contain the equivalent
      * source properties, otherwise it returns `false`.
      *
-     * @static
+     * @scripts
      * @since 4.0.0
      * @memberOf _
      * @category Util
@@ -41691,7 +41691,7 @@ function isSlowBuffer (obj) {
      * values against any array or object value, respectively. See `_.isEqual`
      * for a list of supported value comparisons.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Util
@@ -41720,7 +41720,7 @@ function isSlowBuffer (obj) {
      * `srcValue` values against any array or object value, respectively. See
      * `_.isEqual` for a list of supported value comparisons.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.2.0
      * @category Util
@@ -41745,7 +41745,7 @@ function isSlowBuffer (obj) {
      * Creates a function that invokes the method at `path` of a given object.
      * Any additional arguments are provided to the invoked method.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.7.0
      * @category Util
@@ -41776,7 +41776,7 @@ function isSlowBuffer (obj) {
      * the method at a given path of `object`. Any additional arguments are
      * provided to the invoked method.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.7.0
      * @category Util
@@ -41808,7 +41808,7 @@ function isSlowBuffer (obj) {
      * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
      * avoid conflicts caused by modifying the original.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -41876,7 +41876,7 @@ function isSlowBuffer (obj) {
      * Reverts the `_` variable to its previous value and returns a reference to
      * the `lodash` function.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -41895,7 +41895,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns `undefined`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.3.0
      * @category Util
@@ -41912,7 +41912,7 @@ function isSlowBuffer (obj) {
      * Creates a function that gets the argument at index `n`. If `n` is negative,
      * the nth argument from the end is returned.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -41939,7 +41939,7 @@ function isSlowBuffer (obj) {
      * Creates a function that invokes `iteratees` with the arguments it receives
      * and returns their results.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -41959,7 +41959,7 @@ function isSlowBuffer (obj) {
      * Creates a function that checks if **all** of the `predicates` return
      * truthy when invoked with the arguments it receives.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -41985,7 +41985,7 @@ function isSlowBuffer (obj) {
      * Creates a function that checks if **any** of the `predicates` return
      * truthy when invoked with the arguments it receives.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -42010,7 +42010,7 @@ function isSlowBuffer (obj) {
     /**
      * Creates a function that returns the value at `path` of a given object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 2.4.0
      * @category Util
@@ -42037,7 +42037,7 @@ function isSlowBuffer (obj) {
      * The opposite of `_.property`; this method creates a function that returns
      * the value at a given path of `object`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.0.0
      * @category Util
@@ -42069,7 +42069,7 @@ function isSlowBuffer (obj) {
      * **Note:** JavaScript follows the IEEE-754 standard for resolving
      * floating-point values which can produce unexpected results.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -42107,7 +42107,7 @@ function isSlowBuffer (obj) {
      * This method is like `_.range` except that it populates values in
      * descending order.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -42144,7 +42144,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns a new empty array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.13.0
      * @category Util
@@ -42166,7 +42166,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns `false`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.13.0
      * @category Util
@@ -42183,7 +42183,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns a new empty object.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.13.0
      * @category Util
@@ -42205,7 +42205,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns an empty string.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.13.0
      * @category Util
@@ -42222,7 +42222,7 @@ function isSlowBuffer (obj) {
     /**
      * This method returns `true`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.13.0
      * @category Util
@@ -42240,7 +42240,7 @@ function isSlowBuffer (obj) {
      * Invokes the iteratee `n` times, returning an array of the results of
      * each invocation. The iteratee is invoked with one argument; (index).
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -42276,7 +42276,7 @@ function isSlowBuffer (obj) {
     /**
      * Converts `value` to a property path array.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Util
@@ -42300,7 +42300,7 @@ function isSlowBuffer (obj) {
     /**
      * Generates a unique ID. If `prefix` is given, the ID is appended to it.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Util
@@ -42324,7 +42324,7 @@ function isSlowBuffer (obj) {
     /**
      * Adds two numbers.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.4.0
      * @category Math
@@ -42343,7 +42343,7 @@ function isSlowBuffer (obj) {
     /**
      * Computes `number` rounded up to `precision`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.10.0
      * @category Math
@@ -42366,7 +42366,7 @@ function isSlowBuffer (obj) {
     /**
      * Divide two numbers.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.7.0
      * @category Math
@@ -42385,7 +42385,7 @@ function isSlowBuffer (obj) {
     /**
      * Computes `number` rounded down to `precision`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.10.0
      * @category Math
@@ -42409,7 +42409,7 @@ function isSlowBuffer (obj) {
      * Computes the maximum value of `array`. If `array` is empty or falsey,
      * `undefined` is returned.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Math
@@ -42434,7 +42434,7 @@ function isSlowBuffer (obj) {
      * invoked for each element in `array` to generate the criterion by which
      * the value is ranked. The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Math
@@ -42461,7 +42461,7 @@ function isSlowBuffer (obj) {
     /**
      * Computes the mean of the values in `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Math
@@ -42481,7 +42481,7 @@ function isSlowBuffer (obj) {
      * invoked for each element in `array` to generate the value to be averaged.
      * The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.7.0
      * @category Math
@@ -42507,7 +42507,7 @@ function isSlowBuffer (obj) {
      * Computes the minimum value of `array`. If `array` is empty or falsey,
      * `undefined` is returned.
      *
-     * @static
+     * @scripts
      * @since 0.1.0
      * @memberOf _
      * @category Math
@@ -42532,7 +42532,7 @@ function isSlowBuffer (obj) {
      * invoked for each element in `array` to generate the criterion by which
      * the value is ranked. The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Math
@@ -42559,7 +42559,7 @@ function isSlowBuffer (obj) {
     /**
      * Multiply two numbers.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.7.0
      * @category Math
@@ -42578,7 +42578,7 @@ function isSlowBuffer (obj) {
     /**
      * Computes `number` rounded to `precision`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.10.0
      * @category Math
@@ -42601,7 +42601,7 @@ function isSlowBuffer (obj) {
     /**
      * Subtract two numbers.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Math
@@ -42620,7 +42620,7 @@ function isSlowBuffer (obj) {
     /**
      * Computes the sum of the values in `array`.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 3.4.0
      * @category Math
@@ -42642,7 +42642,7 @@ function isSlowBuffer (obj) {
      * invoked for each element in `array` to generate the value to be summed.
      * The iteratee is invoked with one argument: (value).
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @since 4.0.0
      * @category Math
@@ -43001,7 +43001,7 @@ function isSlowBuffer (obj) {
     /**
      * The semantic version number.
      *
-     * @static
+     * @scripts
      * @memberOf _
      * @type {string}
      */
@@ -44230,7 +44230,7 @@ function SafeBuffer (arg, encodingOrOffset, length) {
   return Buffer(arg, encodingOrOffset, length)
 }
 
-// Copy static methods from Buffer
+// Copy scripts methods from Buffer
 copyProps(Buffer, SafeBuffer)
 
 SafeBuffer.from = function (arg, encodingOrOffset, length) {
