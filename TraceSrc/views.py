@@ -6,7 +6,7 @@ import json
 # index front-to-end connector
 def index(req):
     ctx = dict()
-    startNum = 34
+    startNum = 17
     # 在这里调整追踪0还是溯源1
     # 前端只需要在这里处理即可
     direct = {'forwards':0, 'backwards':1}

@@ -55,7 +55,7 @@ allEdges = [
     {"start": 14, "end": 16, "option": {"label": "60酸酸乳"}},
 
     {"start": 15, "end": 17, "option": {"label": "55新养道"}},
-
+    {"start": 16, "end": 17, "option": {"label": "50特仑苏60酸酸乳"}},
     {"start": 17, "end": 18, "option": {"label": "25特仑苏25酸酸乳25新养道"}},
     {"start": 17, "end": 19, "option": {"label": "15特仑苏15酸酸乳10新养道"}},
     {"start": 17, "end": 20, "option": {"label": "10特仑苏20酸酸乳20新养道"}},
