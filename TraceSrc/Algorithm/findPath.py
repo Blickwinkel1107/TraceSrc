@@ -38,14 +38,17 @@ def route_merge(list, graph):
 
 graph = {'A': [['B', "30goods A"], ['C', "20 goods A"]], 'B': [['D', "10 goods A"]], 'C': [['D', "10 goods A"]],
          'D': []}
-while True:
-    vertice = input("请输入起始节点序号：")
-    while (vertice not in graph.keys()):
-        vertice = input("图中不包含该节点，请重新输入起始节点序号：")
-    temp = int(input("追踪->0,溯源->1："))
-    if (temp == 0):
-        print(route_merge(find_all_paths(graph, vertice, 'D'), graph))
-    elif (temp == 1):
-        print(route_merge(find_all_paths(graph, 'A', vertice), graph))
-    else:
-        print("输入不合法，请重新输入信息：")
+
+
+if __name__ == '__main__':
+    while True:
+        vertice = input("请输入起始节点序号：")
+        while (vertice not in graph.keys()):
+            vertice = input("图中不包含该节点，请重新输入起始节点序号：")
+        temp = int(input("追踪->0,溯源->1："))
+        if (temp == 0):
+            print(route_merge(find_all_paths(graph, vertice, 'D'), graph))
+        elif (temp == 1):
+            print(route_merge(find_all_paths(graph, 'A', vertice), graph))
+        else:
+            print("输入不合法，请重新输入信息：")

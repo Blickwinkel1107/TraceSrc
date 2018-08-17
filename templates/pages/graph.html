@@ -129,7 +129,7 @@
         {id: 32, label: 'V32\n客户G', class: 'type-run'},
         {id: 33, label: 'V33\n客户H', class: 'type-run'},
         {id: 34, label: 'V34\n客户I', class: 'type-run'},
-    ]
+    ];
     let edg = [
         {start: 1, end: 12, option: {label: "生牛乳"}},
         {start: 2, end: 12, option: {label: "生牛乳"}},
@@ -187,6 +187,13 @@
         }
     });
 
+    //yx @ 2018/8/17
+    //test block
+    let testData = '{{ testBlock }}';
+    let reg = new RegExp( '&quot;' , "g" );
+    testData = testData.replace(reg, '"');
+    console.log(JSON.parse(testData));
+    //test block
 
     let myMenu = document.getElementById("myMenu"); //鼠标右键
     svgCanvas.addEventListener("contextmenu", (event) => { //鼠标右击事件
