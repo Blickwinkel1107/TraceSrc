@@ -7,7 +7,187 @@
 <script src="../scripts/d3.min.js" charset="utf-8"></script>
 <script src="../scripts/dagre-d3.js"></script>
 <script src="../scripts/diag.js"></script>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
 
+<style>
+* {
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+a {
+	text-decoration:none;
+	color:#ffffff
+}
+ul,ol,li {
+	list-style:none;
+}
+ul li {
+	float:left;
+	background-color:#66ff66;
+	width:80px;
+	height:40px;
+	line-height:40px;
+}
+ul li a {
+	display:block;
+	width:80px;
+	height:40px;
+}
+.list2 {
+	position:relative;
+	display:none;
+}
+.list2 li {
+	clear:left;
+	width:80px;
+	height:40px;
+	line-height:40px;
+}
+.list2 li a {
+	display:block;
+	width:80px;
+	height:40px;
+}
+.list2 li a:hover {
+	background-color:#00cc33;
+}
+.list3 {
+	position:relative;
+	display:none;
+	left:80px;
+	top:-40px;
+}
+.list3 li {
+	clear:left;
+	width:80px;
+	height:40px;
+	line-height:40px;
+	background-color:#009933;
+}
+.list3 li a {
+	display:block;
+	width:80px;
+	height:40px;
+}
+</style>
+
+<body>
+
+<ul class="list1">
+    <li>
+        <a href="#">选取节点</a>
+        <ol class="list2">
+            <li>
+                <a href="#">供货商</a>
+                <ol class="list3">
+                    <li><a id="1" value="1" href="#" onclick="postData(this)">A</a></li>
+                    <li><a id="2" value="2" href="#" onclick="postData(this)">B</a></li>
+                    <li><a id="3" value="3" href="#" onclick="postData(this)">C</a></li>
+                    <li><a id="4" value="4" href="#" onclick="postData(this)">D</a></li>
+                    <li><a id="5" value="5" href="#" onclick="postData(this)">E</a></li>
+                    <li><a id="6" value="6" href="#" onclick="postData(this)">F</a></li>
+                    <li><a id="7" value="7" href="#" onclick="postData(this)">G</a></li>
+                    <li><a id="8" value="8" href="#" onclick="postData(this)">H</a></li>
+                    <li><a id="9" value="9" href="#" onclick="postData(this)">I</a></li>
+                    <li><a id="10" value="10" href="#" onclick="postData(this)">J</a></li>
+                    <li><a id="11" value="11" href="#" onclick="postData(this)">K</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">工厂</a>
+                <ol class="list3">
+                    <li><a id="12" value="12" href="#" onclick="postData(this)">特仑苏工厂</a></li>
+                    <li><a id="14" value="14" href="#" onclick="postData(this)">酸酸乳工厂</a></li>
+                    <li><a id="15" value="15" href="#" onclick="postData(this)">新养道工厂</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">总部</a>
+                <ol class="list3">
+                    <li><a id="16" value="16" href="#" onclick="postData(this)">蒙牛制造总部</a></li>
+                    <li><a id="17" value="17" href="#" onclick="postData(this)">蒙牛行销总部</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">分公司</a>
+                <ol class="list3">
+                    <li><a id="18" value="18" href="#" onclick="postData(this)">北京分公司</a></li>
+                    <li><a id="19" value="19" href="#" onclick="postData(this)">武汉分公司</a></li>
+                    <li><a id="20" value="20" href="#" onclick="postData(this)">温州分公司</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">卖场</a>
+                <ol class="list3">
+                    <li><a id="21" value="21" href="#" onclick="postData(this)">A</a></li>
+                    <li><a id="22" value="22" href="#" onclick="postData(this)">B</a></li>
+                    <li><a id="23" value="23" href="#" onclick="postData(this)">C</a></li>
+                    <li><a id="24" value="24" href="#" onclick="postData(this)">D</a></li>
+                    <li><a id="25" value="25" href="#" onclick="postData(this)">E</a></li>
+                </ol>
+            </li>
+            <li>
+            	<a href="#">客户</a>
+            	<ol class="list3">
+            		<li><a id="26" value="26" href="#" onclick="postData(this)">A</a></li>
+            		<li><a id="27" value="27" href="#" onclick="postData(this)">B</a></li>
+            		<li><a id="28" value="28" href="#" onclick="postData(this)">C</a></li>
+            		<li><a id="29" value="29" href="#" onclick="postData(this)">D</a></li>
+            		<li><a id="30" value="30" href="#" onclick="postData(this)">E</a></li>
+            		<li><a id="31" value="31" href="#" onclick="postData(this)">F</a></li>
+            		<li><a id="32" value="32" href="#" onclick="postData(this)">G</a></li>
+            		<li><a id="33" value="33" href="#" onclick="postData(this)">H</a></li>
+            		<li><a id="34" value="34" href="#" onclick="postData(this)">I</a></li>
+            	</ol>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <a href="#">追溯方向</a>
+        <ol class="list2">
+            <li><a id="backwards" href="#" onclick="postDirect(this)">Backwards</a></li>
+            <li><a id="forwards" href="#" onclick="postDirect(this)">Forwards</a></li>
+        </ol>
+    </li>
+</ul>
+
+<script type="text/javascript">
+	function postData(e){
+		var point = e.getAttribute("id");
+		$.ajax({
+            type: "POST",
+            url: "views.py/index",    //后台处理函数的url
+            data: JSON.stringify({
+            	num: point
+            }),
+            contentType: 'application/json',
+        });
+	}
+	function postDirect(e){
+		var direct = e.getAttribute("id");
+
+	}
+</script>
+
+<script>
+$(document).ready(function() {
+    var $elem1 = $(".list1>li");
+    var $elem2 = $(".list1>li>ol>li");
+
+    $elem1.mouseenter(function() {
+        $(this).children("ol").stop().slideDown();
+    }).mouseleave(function() {
+        $(this).children("ol").stop().slideUp();
+    });
+
+    $elem2.mouseenter(function() {
+        $(this).children("ol").stop().fadeIn(1500);
+    }).mouseleave(function() {
+        $(this).children("ol").stop().fadeOut(1500);
+    });
+});
+</script>
 
 <style id="css">
     /* This sets the color for "TK" nodes to a light blue green. */
@@ -222,3 +402,5 @@
     });
 
 </script>
+
+</body>
