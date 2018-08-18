@@ -2282,7 +2282,7 @@ function utf8Slice (buf, start, end) {
 }
 
 // Based on http://stackoverflow.com/a/22747272/680742, the browser with
-// the lowest limit is Chrome, with 0x10000 args.
+// the lowest limit is Chrome, with 0x10000 args.txt.
 // We go 1 magnitude less, for safety
 var MAX_ARGUMENTS_LENGTH = 0x1000
 
@@ -26655,7 +26655,7 @@ function isSlowBuffer (obj) {
 
   /**
    * A faster alternative to `Function#apply`, this function invokes `func`
-   * with the `this` binding of `thisArg` and the arguments of `args`.
+   * with the `this` binding of `thisArg` and the arguments of `args.txt`.
    *
    * @private
    * @param {Function} func The function to invoke.
@@ -28919,7 +28919,7 @@ function isSlowBuffer (obj) {
     }
 
     /**
-     * The base implementation of `_.delay` and `_.defer` which accepts `args`
+     * The base implementation of `_.delay` and `_.defer` which accepts `args.txt`
      * to provide to `func`.
      *
      * @private
@@ -44960,7 +44960,7 @@ module.exports = Array.isArray || function (arr) {
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args');
+var processNextTick = require('process-nextick-args.txt');
 /*</replacement>*/
 
 /*<replacement>*/
@@ -45129,7 +45129,7 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args');
+var processNextTick = require('process-nextick-args.txt');
 /*</replacement>*/
 
 module.exports = Readable;
@@ -46286,7 +46286,7 @@ Transform.prototype._write = function (chunk, encoding, cb) {
   }
 };
 
-// Doesn't matter what the args are here.
+// Doesn't matter what the args.txt are here.
 // _transform does all the work.
 // That we got here means that the readable side wants more data.
 Transform.prototype._read = function (n) {
@@ -46358,7 +46358,7 @@ function done(stream, er, data) {
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args');
+var processNextTick = require('process-nextick-args.txt');
 /*</replacement>*/
 
 module.exports = Writable;
@@ -47074,7 +47074,7 @@ module.exports = function () {
 
 /*<replacement>*/
 
-var processNextTick = require('process-nextick-args');
+var processNextTick = require('process-nextick-args.txt');
 /*</replacement>*/
 
 // undocumented cb() API, needed for core, not for public API
