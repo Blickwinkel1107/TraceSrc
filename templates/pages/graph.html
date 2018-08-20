@@ -7,7 +7,7 @@
 <script src="../scripts/d3.min.js" charset="utf-8"></script>
 <script src="../scripts/dagre-d3.js"></script>
 <script src="../scripts/diag.js"></script>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <style>
 * {
@@ -24,7 +24,7 @@ ul,ol,li {
 }
 ul li {
 	float:left;
-	background-color:#66ff66;
+	background-color:#9966FF;
 	width:80px;
 	height:40px;
 	line-height:40px;
@@ -50,7 +50,7 @@ ul li a {
 	height:40px;
 }
 .list2 li a:hover {
-	background-color:#00cc33;
+	background-color:#6600FF;
 }
 .list3 {
 	position:relative;
@@ -63,17 +63,27 @@ ul li a {
 	width:80px;
 	height:40px;
 	line-height:40px;
-	background-color:#009933;
+	background-color:#9966FF;
 }
 .list3 li a {
 	display:block;
 	width:80px;
 	height:40px;
 }
+.test {
+    position:absolute;
+    left:20px;
+    top:100px;
+    color:#000000;
+    width:80px;
+    height:40px; 
+    width:200px;
+}
+
+
 </style>
 
 <body>
-
 <ul class="list1">
     <li>
         <a href="#">选取节点</a>
@@ -153,6 +163,11 @@ ul li a {
     <li><a href="#" onclick="updateGraph()">提交</a></li>
     <li><a href="#" onclick="showOrigin()">显示原图</a></li>
 </ul>
+<div class="test"> 
+    <div>当前节点:&nbsp;&nbsp;{{current_start}}</div><br><br>
+    <div>当前追溯方向:&nbsp;&nbsp;{{current_direct}}</div>
+</div>
+
 
 
 <script>
@@ -247,20 +262,20 @@ $(document).ready(function() {
     #myMenu {
         position: absolute;
         display: none;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+        opacity:0.8;
         background: #999999;
     }
 </style>
 
 <svg id="svgCanvas" width=960 height=900></svg>
 <ul id="myMenu">
-    <li>xx</li>
-    <li>xx</li>
+    <li value="0" onclick="clickUpdateGraph(this)">追踪</li>
+    <li value="1" onclick="clickUpdateGraph(this)">溯源</li>
 </ul>
 
 <script id="js">
-
     let graph = '{{ graph }}';
     let reg = new RegExp( '&quot;' , "g" );
     graph = graph.replace(reg, '"');
@@ -281,13 +296,21 @@ $(document).ready(function() {
 		else
             direct = e.getAttribute("id");
 	}
+	function clickUpdateGraph(e) {
+    	if(e.getAttribute("value") == "0") 
+        	direct = "forwards";
+    	else 
+        	direct = "backwards";
+        point = statePoint;
+    	updateGraph();
+	}
 	function updateGraph(){
 	   $.ajax({
             type: "POST",
             url: "index",
             data: {
                 point: point,
-                direct: direct,
+                direct: direct
             },
             success: () => {
                 alert('修改成功！');
@@ -321,17 +344,19 @@ $(document).ready(function() {
     //test block
 
     let myMenu = document.getElementById("myMenu"); //鼠标右键
-    svgCanvas.addEventListener("contextmenu", (event) => { //鼠标右击事件
+    svgCanvas.addEventListener("contextmenu",function (e) { //鼠标右击事件
         event.preventDefault();
         if (event.target.tagName === 'rect') {
             myMenu.style.top = event.clientY + "px";
             myMenu.style.left = event.clientX + "px";
-            myMenu.style.display = 'block'
+            myMenu.style.display = 'block';
+            statePoint = e.target.parentNode.id
             // this.myMenuShow = true
         }
     });
     document.addEventListener("click", (event) => {
-        myMenu.style.display = 'none'
+        myMenu.style.display = 'none';
+        statePoint = point
     });
 
 </script>
