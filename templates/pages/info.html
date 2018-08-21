@@ -1,0 +1,474 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>蒙牛供应链</title>
+
+    <!--Of Graph-->
+    <script src="../scripts/d3.min.js" charset="utf-8"></script>
+    <script src="../scripts/dagre-d3.js"></script>
+    <script src="../scripts/diag.js"></script>
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script src="../scripts/saveSvgAsPng.js"></script>
+
+
+
+    <!-- Favicon-->
+    <link rel="icon" href="{% static 'inside/favicon.ico" type="image/x-icon'%}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="{% static 'inside/plugins/bootstrap/css/bootstrap.css'%}" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="{% static 'inside/plugins/node-waves/waves.css'%}" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="{% static 'inside/plugins/animate-css/animate.css'%}" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="{% static 'inside/plugins/bootstrap-select/css/bootstrap-select.css'%}" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="{% static 'inside/css/style.css'%}" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="{% static 'inside/css/themes/all-themes.css'%}" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="http://127.0.0.1:8000/index">蒙牛供应链</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">导 航</li>
+                    <li class="active">
+                            <a onclick="showOrigin()">
+                                <i class="material-icons">home</i>
+                                <span>显示原图</span>
+                            </a>
+                    </li>
+                    <li>
+                            <a onclick="updateGraph()">
+                                <i class="material-icons">text_fields</i>
+                                <span>提交</span>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">trending_down</i>
+                            <span>追溯方向</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a id="backwards" href="#" onclick="updateData(this)">Backwards</a></li>
+                            <li><a id="forwards" href="#" onclick="updateData(this)">Forwards</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">map</i>
+                            <span>供应商</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a id="1" value="1" href="#" onclick="updateData(this)">A</a></li>
+                            <li><a id="2" value="2" href="#" onclick="updateData(this)">B</a></li>
+                            <li><a id="3" value="3" href="#" onclick="updateData(this)">C</a></li>
+                            <li><a id="4" value="4" href="#" onclick="updateData(this)">D</a></li>
+                            <li><a id="5" value="5" href="#" onclick="updateData(this)">E</a></li>
+                            <li><a id="6" value="6" href="#" onclick="updateData(this)">F</a></li>
+                            <li><a id="7" value="7" href="#" onclick="updateData(this)">G</a></li>
+                            <li><a id="8" value="8" href="#" onclick="updateData(this)">H</a></li>
+                            <li><a id="9" value="9" href="#" onclick="updateData(this)">I</a></li>
+                            <li><a id="10" value="10" href="#" onclick="updateData(this)">J</a></li>
+                            <li><a id="11" value="11" href="#" onclick="updateData(this)">K</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">layers</i>
+                            <span>工厂</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a id="12" value="12" href="#" onclick="updateData(this)">特仑苏工厂</a></li>
+                            <li><a id="14" value="14" href="#" onclick="updateData(this)">酸酸乳工厂</a></li>
+                            <li><a id="15" value="15" href="#" onclick="updateData(this)">新养道工厂</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">swap_calls</i>
+                            <span>总部</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a id="16" value="16" href="#" onclick="updateData(this)">蒙牛制造总部</a></li>
+                            <li><a id="17" value="17" href="#" onclick="updateData(this)">蒙牛行销总部</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">assignment</i>
+                            <span>分公司</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a id="18" value="18" href="#" onclick="updateData(this)">北京分公司</a></li>
+                            <li><a id="19" value="19" href="#" onclick="updateData(this)">武汉分公司</a></li>
+                            <li><a id="20" value="20" href="#" onclick="updateData(this)">温州分公司</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>卖场</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a id="21" value="21" href="#" onclick="updateData(this)">A</a></li>
+                            <li><a id="22" value="22" href="#" onclick="updateData(this)">B</a></li>
+                            <li><a id="23" value="23" href="#" onclick="updateData(this)">C</a></li>
+                            <li><a id="24" value="24" href="#" onclick="updateData(this)">D</a></li>
+                            <li><a id="25" value="25" href="#" onclick="updateData(this)">E</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">content_copy</i>
+                            <span>客户</span>
+                        </a>
+                        <ul class="ml-menu">
+
+                            <li><a id="26" value="26" href="#" onclick="updateData(this)">A</a></li>
+                            <li><a id="27" value="27" href="#" onclick="updateData(this)">B</a></li>
+                            <li><a id="28" value="28" href="#" onclick="updateData(this)">C</a></li>
+            		          <li><a id="29" value="29" href="#" onclick="updateData(this)">D</a></li>
+            		          <li><a id="30" value="30" href="#" onclick="updateData(this)">E</a></li>
+            		          <li><a id="31" value="31" href="#" onclick="updateData(this)">F</a></li>
+            		          <li><a id="32" value="32" href="#" onclick="updateData(this)">G</a></li>
+            		          <li><a id="33" value="33" href="#" onclick="updateData(this)">H</a></li>
+                            <li><a id="34" value="34" href="#" onclick="updateData(this)">I</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- #Menu -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>供应链视图</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                被选节点的追踪/溯源视图
+                                <small>当前节点:&nbsp;&nbsp;{{current_start}}</small>
+                                <small>当前追溯方向:&nbsp;&nbsp;{{current_direct}}</small>
+                                <small>&nbsp;&nbsp;</small>
+                                <div class="row clearfix ">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <button onclick="saveSvg()" class="btn btn-primary waves-effect">导出图片</button>
+                                    </div>
+                                </div>
+                            </h2>
+
+                        </div>
+
+
+
+
+<style id="css">
+    /* This sets the color for "TK" nodes to a light blue green. */
+
+    g.type-suss > rect {
+        fill: #ddefd3;
+    }
+
+    .node text {
+        font-weight: 300;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serf;
+        font-size: 12px;
+        pointer-events: none;
+        text-anchor: middle;
+        fill: white;
+    }
+
+    .label g text tspan:last-child {
+        font-size: 10px;
+        margin-top: 5px;
+        dy: 1.5em;
+    }
+
+    .label g {
+        transform: translate(0, -13px);
+    }
+
+    .node rect {
+        fill: white;
+        stroke-width: 0px;
+        color: white;
+    }
+
+    .edgePath path {
+        stroke: rgb(78, 78, 78);
+        stroke-width: 1px;
+    }
+
+    g.type-init > rect {
+        fill: rgba(254, 67, 101, 1);
+    }
+
+    g.type-ready > rect {
+        fill: rgba(255, 150, 128, 1);
+    }
+
+    g.type-queue > rect {
+        fill: rgba(200, 200, 169, 1);
+    }
+
+    g.type-run > rect {
+        fill: rgba(173, 137, 118, 1);
+    }
+
+    g.type-suss > rect {
+        fill: rgba(131, 175, 155, 1);
+    }
+
+    g.type-fail > rect {
+        fill: rgba(252, 157, 154, 1);
+
+    }
+
+    g.type-freeze > rect {
+        fill: rgba(249, 205, 173, 1);
+    }
+
+    .type-freeze text {
+        fill: #999999;
+    }
+    
+    .node > rect:hover {
+        outline: 4px solid #6FF0FC;
+        outline-offset: -1px;
+    }
+    
+    .selection {
+    	float:left;
+    	background-color:#f8c5ce;
+    	width:80px;
+    	height:40px;
+    	line-height:40px;
+    }
+    
+    #myMenu {
+        position: fixed;
+        display: none;
+        width: 80px;
+        height: 80px;
+        opacity:0.9;
+        background: #f8c5ce;
+        color: #000;
+        text-align:center;
+    }
+</style>
+
+<svg id="svgCanvas" width=1260 height=900></svg>
+<div id="myMenu">
+    <li class="selection" value="1" onclick="clickUpdateGraph(this)">溯源</li>
+    <li class="selection" value="0" onclick="clickUpdateGraph(this)">追踪</li>
+</div>
+<script id="js">
+
+    let graph = '{{ graph }}';
+    let reg = new RegExp( '&quot;' , "g" );
+    graph = graph.replace(reg, '"');
+    graph = JSON.parse(graph);
+    let state = graph['state'];
+    let edg = graph['edg'];
+
+    let point = 1;
+	let direct = "forwards";
+	let content = null;
+	let directVec = ['forwards', 'backwards'];
+	function updateData(e){
+	    content = e.getAttribute("id");
+	    if(directVec.indexOf(content) === -1)
+	        point = e.getAttribute("id");
+		else
+            direct = e.getAttribute("id");
+	}
+	function clickUpdateGraph(e) {
+    	if(e.getAttribute("value") == "0")
+        	direct = "forwards";
+    	else
+        	direct = "backwards";
+        point = statePoint;
+    	updateGraph();
+	}
+	function updateGraph(){
+	   $.ajax({
+            type: "POST",
+            url: "index",
+            data: {
+                point: point,
+                direct: direct,
+            },
+            success: () => {
+                //alert('修改成功！');
+                window.location.reload();
+            },
+        });
+    }
+    function showOrigin(){
+	    point = 0;
+	    direct = "forwards";
+	    updateGraph();
+    }
+    function closeMenu(){
+        myMenu.style.display = "none";
+        statePoint = point
+    }
+    function F_Open_dialog()
+    {
+        document.getElementById("btn_file").click();
+    }
+
+    function saveSvg(){
+        saveSvgAsPng(document.getElementById("svgCanvas"), "diagram.jpg",{backgroundColor:"white"});
+    }
+    
+    $(function(){
+        
+      $("#td1").text(statePoint);
+
+   });
+    
+    let statePoint = 1; // 当前选中的点
+    diagGraph.init(statePoint, state, edg); //创建关系图
+
+    let svgCanvas = document.getElementById("svgCanvas"); //绑定事件鼠标点击
+    let myMenu = document.getElementById("myMenu"); //鼠标右键
+    
+    svgCanvas.addEventListener("click", function (e) {
+        e.preventDefault();
+        closeMenu();
+        if (e.target.tagName === "rect") {
+            diagGraph.changePoint(e.target.parentNode.id);
+        }
+    });
+    svgCanvas.addEventListener("contextmenu",function (e) { //鼠标右击事件
+        if (event.target.tagName === "rect") {
+            event.preventDefault();
+            myMenu.style.top = event.clientY + "px";
+            myMenu.style.left = event.clientX + "px";
+            myMenu.style.display = "block";
+            statePoint = e.target.parentNode.id
+            // this.myMenuShow = true
+        }
+        else
+            closeMenu();
+    });
+    //svgCanvas.onwheel = closeMenu();
+    svgCanvas.addEventListener("wheel", closeMenu())
+    window.onmousewheel=document.onmousewheel=svgCanvas.onmousewheel=closeMenu;
+    
+    $('svgCanvas').bind('wheel', closeMenu());
+
+</script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="{% static 'inside/plugins/jquery/jquery.min.js'%}"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="{% static 'inside/plugins/bootstrap/js/bootstrap.js'%}"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="{% static 'inside/plugins/bootstrap-select/js/bootstrap-select.js'%}"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="{% static 'inside/plugins/jquery-slimscroll/jquery.slimscroll.js'%}"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="{% static 'inside/plugins/node-waves/waves.js'%}"></script>
+
+    <!-- Custom Js -->
+    <script src="{% static 'inside/js/admin.js'%}"></script>
+    <script src="{% static 'inside/js/pages/ui/animations.js'%}"></script>
+
+    <!-- Demo Js -->
+    <script src="{% static 'inside/js/demo.js'%}"></script>
+
+
+
+</body>
+
+</html>

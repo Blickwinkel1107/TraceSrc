@@ -20,5 +20,6 @@ from TraceSrc import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^index$', views.index)
+    url('index/',views.index),
+    url('info/',views.info)
 ]
